@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+form{
+padding:8px;
+background-color:lightgreen;
+width:50%;
+height:80%;
+margin-top:8%;
+}
+#submit{
+background-color:lightgrey;
+color:blue;
+}
+body{
+background-color:lightblue;
+}
+</style>
+</head>
+<body>
+<center>
+<div>
+<form method="POST" action="/register">
+<h2>Regestration Form</h2>
+<table>
+<tr>
+<td><label>Username</label></td>
+<td><input type="text" name="username" placeholder="enter your name"></td>
+</tr>
+<tr>
+<tr>
+<td><label>Email</label></td>
+<td><input type="email" name="email" placeholder="enter your email"></td>
+</tr>
+<tr>
+<td><label>Password</label></td>
+<td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td><label>Number</label></td>
+<td><input type="tel" name="phone"></td>
+</tr>
+<tr>
+<td><label>Gender</label></td>
+<td><input type="radio" name="gender" value="male">male
+<input type="radio" name="gender"value="female">female
+<input type="radio" name="gender"value="others">others</td>
+</tr>
+<tr>
+<td><label>Role</label></td>
+<td><input type="radio" value="admin" name="role">Admin
+<input type="radio" value="customer" name="role">Customer</td>
+</tr>
+<tr>
+<td><label>Address</label></td>
+<td><textarea id="textarea" rows="3" col="4" name="address"></textarea></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+<input type="submit" id="submit">
+</form>
+</div>
+</center>
+
+</body>
+</html>
